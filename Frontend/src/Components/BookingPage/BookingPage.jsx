@@ -24,7 +24,7 @@ function BookingPage() {
         };
 
         try {
-            const response = await axios.post('http://localhost:8000/book/', formattedData);
+            const response = await axios.post('https://webthon-bakend.vercel.app/book/', formattedData);
             console.log(response.data); 
         } catch (error) {
             console.error('Error creating event:', error.response.data); // Handle error here

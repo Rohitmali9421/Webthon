@@ -15,7 +15,7 @@ const AuthProvider = ({ children }) => {
     if (token) {
       try {
         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-        const response = await axios.get('http://localhost:8000/user/getuser');
+        const response = await axios.get('https://webthon-bakend.vercel.app/user/getuser');
         setAuth({ user: response.data, token });
       } catch (error) {
         console.error('Failed to fetch user info:', error);
@@ -31,7 +31,7 @@ const AuthProvider = ({ children }) => {
 
   const login = async (email, password, setServerError) => {
     try {
-      const response = await axios.post('http://localhost:8000/user/login', {
+      const response = await axios.post('https://webthon-bakend.vercel.app/user/login', {
         email,
         password,
       });
@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
 
   const signUp = async (name, email, password, setServerError) => {
     try {
-      const response = await axios.post('http://localhost:8000/user/signup', {
+      const response = await axios.post('https://webthon-bakend.vercel.app/user/signup', {
         name,
         email,
         password,
