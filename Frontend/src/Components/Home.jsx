@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
 import Baner from './Banner'
 import Facilities from './Facility/Facilities'
 import Featured from './Featured'

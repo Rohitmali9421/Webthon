@@ -6,8 +6,8 @@ import SignUp from './Components/SignUp';
 import Contact from './Components/Contact';
 import Layout from './Components/Layout';
 import BookingPage from './Components/BookingPage/BookingPage';
-import About from './Components/About';
 import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
+import About from './Components/About';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
